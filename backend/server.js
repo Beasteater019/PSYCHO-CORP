@@ -8,6 +8,7 @@ import doctorRouter from "./routes/doctorRoute.js";
 import adminRouter from "./routes/adminRoute.js";
 import chatbotRouter from "./routes/chatbotRoute.js";  // Import chatbot route
 
+
 // App config
 const app = express();
 const port = process.env.PORT || 4000;
@@ -30,3 +31,4 @@ app.get("/", (req, res) => {
 
 // Start the server
 app.listen(port, () => console.log(`Server started on PORT:${port}`));
+

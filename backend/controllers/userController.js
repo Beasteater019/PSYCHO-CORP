@@ -220,6 +220,8 @@ const cancelAppointment = async (req, res) => {
     }
 }
 
+
+
 // API to get user appointments for frontend my-appointments page
 const listAppointment = async (req, res) => {
     try {
@@ -234,6 +236,9 @@ const listAppointment = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+
+
 
 // API to make payment of appointment using razorpay
 const paymentRazorpay = async (req, res) => {
@@ -264,6 +269,8 @@ const paymentRazorpay = async (req, res) => {
     }
 }
 
+
+
 // API to verify payment of razorpay
 const verifyRazorpay = async (req, res) => {
     try {
@@ -282,6 +289,8 @@ const verifyRazorpay = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+
 
 // API to make payment of appointment using Stripe
 const paymentStripe = async (req, res) => {
